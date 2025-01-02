@@ -13,3 +13,4 @@ dependencies:
   - pip:
       - mlflow==2.2.2
       - wandb==0.16.0
+      
