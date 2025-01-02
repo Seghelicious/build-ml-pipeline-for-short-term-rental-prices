@@ -1,4 +1,4 @@
-name: pipeline
+name: nyc_airbnb_dev
 channels:
   - conda-forge
   - defaults
