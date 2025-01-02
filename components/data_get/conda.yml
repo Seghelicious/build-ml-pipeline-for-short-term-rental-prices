@@ -1,0 +1,13 @@
+name: data_get
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip=23.3.1
+  - requests=2.24.0
+  - pyarrow
+  - pip:
+      - mlflow==2.2.2
+      - wandb==wandb==0.10.31
+      - git+https://github.com/udacity/nd0821-c2-build-model-workflow-starter.git#egg=wandb-utils&subdirectory=components
