@@ -6,7 +6,7 @@ import tempfile
 from omegaconf import DictConfig, OmegaConf
 
 
-@hydra.main(config_name="config")
+@hydra.main(config_path=".", config_name="config", version_base="1.3")
 def go(config: DictConfig):
     
     # Setup the wandb experiment. All runs will be grouped under this name
