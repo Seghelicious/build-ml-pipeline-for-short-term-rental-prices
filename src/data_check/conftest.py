@@ -10,7 +10,6 @@ def pytest_addoption(parser):
     parser.addoption("--min_price", action="store")
     parser.addoption("--max_price", action="store")
 
-
 @pytest.fixture(scope='session')
 def data(request):
     run = wandb.init(job_type="data_tests", resume=True)
@@ -26,7 +25,6 @@ def data(request):
 
     return df
 
-
 @pytest.fixture(scope='session')
 def ref_data(request):
     run = wandb.init(job_type="data_tests", resume=True)
@@ -41,7 +39,6 @@ def ref_data(request):
     df = pd.read_csv(data_path)
 
     return df
-
 
 @pytest.fixture(scope='session')
 def kl_threshold(request):
