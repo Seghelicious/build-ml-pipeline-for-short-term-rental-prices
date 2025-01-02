@@ -4,9 +4,9 @@ channels:
   - defaults
 dependencies:
   - python=3.10
-  - pip=23.3.1
   - requests=2.24.0
   - pyarrow
+  - pip=23.3.1
   - pip:
       - mlflow==2.2.2
       - wandb==wandb==0.10.31
