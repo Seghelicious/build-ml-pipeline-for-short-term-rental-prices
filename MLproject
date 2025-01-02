@@ -10,4 +10,4 @@ entry_points:
         default: ''
       
     command: >-
-      python main.py $(echo {hydra_options})
+      python main.py 
